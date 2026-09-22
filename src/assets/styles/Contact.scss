@@ -1,0 +1,95 @@
+.contact_wrapper svg {
+  font-size: 1em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.contact-form {
+  padding-top: 20px;
+
+  button {
+    background-color: white;
+    color: #050f0b;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #9aa1ab;
+    opacity: 1;
+  }
+
+  button:hover {
+    background-color: #5170ff;
+    color: white;
+  }
+
+  // White field background lives on the input ROOT (behind the text),
+  // NOT on the outline <fieldset> — that paints over the input and hides typing.
+  .MuiOutlinedInput-root {
+    background-color: white;
+  }
+
+  .MuiOutlinedInput-input {
+    color: #050f0b;
+    -webkit-text-fill-color: #050f0b;
+  }
+
+  // keep the label a constant gray (don't flash MUI blue on focus)
+  .MuiInputLabel-root,
+  .MuiInputLabel-root.Mui-focused {
+    color: #6b7280;
+  }
+
+  fieldset {
+    border-color: rgba(0, 0, 0, 0.23);
+  }
+
+  // focused outline uses the brand blue, not MUI's default
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #5170ff;
+  }
+}
+
+label {
+  font-size: 1.2rem;
+  font-family: 'DomaineDispNar-Medium', sans-serif;
+}
+
+.form-flex {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.form-flex .MuiFormControl-root {
+  width: 100%;
+}
+
+form {
+  width: 100% !important;
+}
+
+.body-form {
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.form-status {
+  font-family: "Lato", sans-serif;
+  font-size: 0.95rem;
+}
+
+.form-status.ok {
+  color: #34d399;
+}
+
+.form-status.err {
+  color: #f87171;
+}
